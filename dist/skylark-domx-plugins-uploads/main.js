@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["./uploads","./SingleUploader","./MultiUploader"],function(e){return e});
+define(["./uploads","./single_uploader","./multi_uploader"],function(e){return e});
 //# sourceMappingURL=sourcemaps/main.js.map

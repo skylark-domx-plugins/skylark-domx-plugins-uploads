@@ -99,7 +99,7 @@ define('skylark-domx-plugins-uploads/uploads',[
 
     return skylark.attach("domx.plugins.uploads", uploads);
 });
-define('skylark-domx-plugins-uploads/SingleUploader',[
+define('skylark-domx-plugins-uploads/single_uploader',[
 	"skylark-langx-emitter",
 	"skylark-langx-async/Deferred",
     "skylark-domx-velm",
@@ -208,7 +208,7 @@ define('skylark-domx-plugins-uploads/SingleUploader',[
 });
 
  
-define('skylark-domx-plugins-uploads/MultiUploader',[
+define('skylark-domx-plugins-uploads/multi_uploader',[
   "skylark-langx/skylark",
   "skylark-langx/langx",
   "skylark-domx-query",
@@ -666,8 +666,8 @@ define('skylark-domx-plugins-uploads/MultiUploader',[
 });
 define('skylark-domx-plugins-uploads/main',[
 	"./uploads",
-	"./SingleUploader",
-	"./MultiUploader"
+	"./single_uploader",
+	"./multi_uploader"
 ],function(uploads){
 	return uploads;
 });
