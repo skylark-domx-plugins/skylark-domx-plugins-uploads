@@ -1,7 +1,7 @@
 define([
 	"./uploads",
-	"./single_uploader",
-	"./multi_uploader"
+	"./single-uploader",
+	"./multi-uploader"
 ],function(uploads){
 	return uploads;
 });

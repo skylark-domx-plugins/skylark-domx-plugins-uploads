@@ -99,7 +99,7 @@ define('skylark-domx-plugins-uploads/uploads',[
 
     return skylark.attach("domx.plugins.uploads", uploads);
 });
-define('skylark-domx-plugins-uploads/single_uploader',[
+define('skylark-domx-plugins-uploads/single-uploader',[
 	"skylark-langx-emitter",
 	"skylark-langx-async/Deferred",
     "skylark-domx-velm",
@@ -124,7 +124,7 @@ define('skylark-domx-plugins-uploads/single_uploader',[
     	} 
 
     	get pluginName(){
-      		return "lark.singleuploader";
+      		return "lark.uploads.single";
     	} 
 
 		get options () {
@@ -208,7 +208,7 @@ define('skylark-domx-plugins-uploads/single_uploader',[
 });
 
  
-define('skylark-domx-plugins-uploads/multi_uploader',[
+define('skylark-domx-plugins-uploads/multi-uploader',[
   "skylark-langx/skylark",
   "skylark-langx/langx",
   "skylark-domx-query",
@@ -250,8 +250,8 @@ define('skylark-domx-plugins-uploads/multi_uploader',[
         '</div>';
 
     var MultiUploader =  plugins.Plugin.inherit({
-        klassName : "Uploader",
-        pluginName : "lark.multiuploader",
+        klassName : "MultiUploader",
+        pluginName : "lark.uploads.multi",
 
         options: {
             uploadUrl: '/upload',
@@ -666,8 +666,8 @@ define('skylark-domx-plugins-uploads/multi_uploader',[
 });
 define('skylark-domx-plugins-uploads/main',[
 	"./uploads",
-	"./single_uploader",
-	"./multi_uploader"
+	"./single-uploader",
+	"./multi-uploader"
 ],function(uploads){
 	return uploads;
 });

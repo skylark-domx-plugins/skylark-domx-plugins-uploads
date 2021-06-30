@@ -23,7 +23,7 @@ define([
     	} 
 
     	get pluginName(){
-      		return "lark.singleuploader";
+      		return "lark.uploads.single";
     	} 
 
 		get options () {

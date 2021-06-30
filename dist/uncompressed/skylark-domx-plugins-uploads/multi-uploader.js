@@ -40,8 +40,8 @@ define([
         '</div>';
 
     var MultiUploader =  plugins.Plugin.inherit({
-        klassName : "Uploader",
-        pluginName : "lark.multiuploader",
+        klassName : "MultiUploader",
+        pluginName : "lark.uploads.multi",
 
         options: {
             uploadUrl: '/upload',

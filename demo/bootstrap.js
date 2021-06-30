@@ -19,6 +19,11 @@ requirejs.config({
             main: 'main'
          },
          {
+           name : "skylark-langx-binary",
+           location : "../node_modules/skylark-langx-binary/dist/uncompressed/skylark-langx-binary",
+            main: 'main'
+         },
+         {
            name : "skylark-langx-datetimes",
            location : "../node_modules/skylark-langx-datetimes/dist/uncompressed/skylark-langx-datetimes",
             main: 'main'
@@ -29,13 +34,18 @@ requirejs.config({
             main: 'main'
          },
          {
+           name : "skylark-langx-events",
+           location : "../node_modules/skylark-langx-events/dist/uncompressed/skylark-langx-events",
+            main: 'main'
+         },
+         {
            name : "skylark-langx-funcs",
            location : "../node_modules/skylark-langx-funcs/dist/uncompressed/skylark-langx-funcs",
             main: 'main'
          },
          {
-           name : "skylark-langx-hoster",
-           location : "../node_modules/skylark-langx-hoster/dist/uncompressed/skylark-langx-hoster",
+           name : "skylark-langx-globals",
+           location : "../node_modules/skylark-langx-globals/dist/uncompressed/skylark-langx-globals",
             main: 'main'
          },
          {
@@ -44,13 +54,28 @@ requirejs.config({
             main: 'main'
          },
          {
+           name : "skylark-langx-hoster",
+           location : "../node_modules/skylark-langx-hoster/dist/uncompressed/skylark-langx-hoster",
+            main: 'main'
+         },
+         {
+           name : "skylark-langx-constructs",
+           location : "../node_modules/skylark-langx-constructs/dist/uncompressed/skylark-langx-constructs",
+            main: 'main'
+         },
+         {
+           name : "skylark-langx-maths",
+           location : "../node_modules/skylark-langx-maths/dist/uncompressed/skylark-langx-maths",
+            main: 'main'
+         },
+         {
            name : "skylark-langx-ns",
            location : "../node_modules/skylark-langx-ns/dist/uncompressed/skylark-langx-ns",
             main: 'main'
          },
          {
-           name : "skylark-langx-numbers",
-           location : "../node_modules/skylark-langx-numbers/dist/uncompressed/skylark-langx-numbers",
+           name : "skylark-langx-numerics",
+           location : "../node_modules/skylark-langx-numerics/dist/uncompressed/skylark-langx-numerics",
             main: 'main'
          },
          {
@@ -71,6 +96,11 @@ requirejs.config({
          {
            name : "skylark-langx-types",
            location : "../node_modules/skylark-langx-types/dist/uncompressed/skylark-langx-types",
+            main: 'main'
+         },
+         {
+           name : "skylark-langx-urls",
+           location : "../node_modules/skylark-langx-urls/dist/uncompressed/skylark-langx-urls",
             main: 'main'
          },
          {
@@ -136,8 +166,8 @@ requirejs.config({
             main: 'main'
          },
          {
-           name : "skylark-domx-plugins",
-           location : "../node_modules/skylark-domx-plugins/dist/uncompressed/skylark-domx-plugins",
+           name : "skylark-domx-plugins-base",
+           location : "../node_modules/skylark-domx-plugins-base/dist/uncompressed/skylark-domx-plugins-base",
             main: 'main'
          },
          {
@@ -171,7 +201,11 @@ requirejs.config({
            location : "../node_modules/skylark-domx-velm/dist/uncompressed/skylark-domx-velm",
             main: 'main'
          },
-                  
+         {
+           name : "skylark-domx-files",
+           location : "../node_modules/skylark-domx-files/dist/uncompressed/skylark-domx-files",
+            main: 'main'
+         },                  
          {
            name : "skylark-data-collection" ,
            location : "../node_modules/skylark-data-collection/dist/uncompressed/skylark-data-collection",
@@ -196,13 +230,7 @@ requirejs.config({
            main: 'main'
          },          
           {
-            name: 'skylark-widgets-swt',
-            location : "../node_modules/skylark-widgets-swt/dist/uncompressed/skylark-widgets-swt",
-//            location : "../../skylark-widgets-swt/src",
-            main: 'main'
-          },
-          {
-            name: 'skylark-domx-files',
+            name: 'skylark-domx-plugins-uploads',
             location : "../src",
             main: 'main'
           }                   
@@ -212,9 +240,9 @@ requirejs.config({
  
 // require(["module/name", ...], function(params){ ... });
 require(["skylark-domx-query"], function ($) {
-    require(["skylark-domx-files"], function (files) {
+    require(["skylark-domx-plugins-uploads"], function (uploads) {
         if (window.initPage) {
-            window.initPage($,files);
+            window.initPage($,uploads);
         }
     });
 });
