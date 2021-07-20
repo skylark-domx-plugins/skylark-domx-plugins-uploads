@@ -87,17 +87,17 @@
 })(function(define,require) {
 
 define('skylark-domx-plugins-uploads/uploads',[
-    "skylark-langx/skylark",
+    "skylark-domx-plugins-base/plugins",
     "skylark-domx-files/dropzone",
     "skylark-domx-files/pastezone",
     "skylark-domx-files/picker"
-], function(skylark) {
+], function(plugins) {
 
     var uploads = function() {
         return uploads;
     };
 
-    return skylark.attach("domx.plugins.uploads", uploads);
+    return plugins.uploads = uploads;
 });
 define('skylark-domx-plugins-uploads/single-uploader',[
 	"skylark-langx-emitter",

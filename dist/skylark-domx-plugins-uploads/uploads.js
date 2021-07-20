@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-langx/skylark","skylark-domx-files/dropzone","skylark-domx-files/pastezone","skylark-domx-files/picker"],function(r){var a=function(){return a};return r.attach("domx.plugins.uploads",a)});
+define(["skylark-domx-plugins-base/plugins","skylark-domx-files/dropzone","skylark-domx-files/pastezone","skylark-domx-files/picker"],function(e){var s=function(){return s};return e.uploads=s});
 //# sourceMappingURL=sourcemaps/uploads.js.map
